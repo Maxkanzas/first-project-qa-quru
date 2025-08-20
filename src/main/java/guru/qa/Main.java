@@ -2,7 +2,7 @@ package guru.qa;
 
 class Main {
     public static void main(String... args) {
-        String hello = "Hello Maxim!!!!!!!!!!!!!!!!!!";
+        String hello = "Hello Maxim";
         System.out.printf(hello);
     }
 }
