@@ -14,3 +14,9 @@ build/
 
 ### Logs ###
 *.log
+
+# Gradle Wrapper files
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+gradlew
+gradlew.bat
