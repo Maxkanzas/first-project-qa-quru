@@ -1,6 +1,7 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -38,7 +39,7 @@ public class PracticeForm {
         $("#react-select-3-input").pressEnter();
         $("#react-select-4-input").setValue("Agra");
         $("#react-select-4-input").pressEnter();
-        $("#submit").click();
+        executeJavaScript("arguments[0].click();", $("#submit"));
         $(".modal-content").shouldBe(visible);
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
         $(".table").shouldHave(
@@ -53,5 +54,6 @@ public class PracticeForm {
                 text("Sun Andreas 15"),
                 text("Uttar Pradesh Agra")
         );
+        $("#closeLargeModal").click();
     }
 }
