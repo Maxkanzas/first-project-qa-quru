@@ -41,7 +41,7 @@ public class PracticeForm {
         $("[for='hobbies-checkbox-1']").click();
 
         // Загрузка картинки (исправленная строка)
-        $("#uploadPicture").uploadFile(new File("/Users/maxkanzas/Downloads/котя.webp"));
+        $("#uploadPicture").uploadFromClasspath("котя.webp");
 
         // Заполнение адреса
         $("#currentAddress").setValue("Sun Andreas 15");
